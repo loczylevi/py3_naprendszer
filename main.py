@@ -39,7 +39,7 @@ ___________________________________________________________________
 
 
 """
-
+#1
 # Merkúr;0;0.0562
 class Bolygok:
   def __init__(self,sor):
@@ -48,4 +48,8 @@ class Bolygok:
     self.holdszam = int(holdszam)
     self.terfogat_arany = float(terfogat_arany)
 
+with open("solsys.txt","r",encoding="UTF-8") as f:
+  lista = [Bolygok(sor) for sor in f]
+
+#2
 
