@@ -40,5 +40,12 @@ ___________________________________________________________________
 
 """
 
+# Merkúr;0;0.0562
+class Bolygok:
+  def __init__(self,sor):
+    nev,holdszam,terfogat_arany = sor.strip().split(";")
+    self.nev = nev
+    self.holdszam = int(holdszam)
+    self.terfogat_arany = float(terfogat_arany)
 
 
