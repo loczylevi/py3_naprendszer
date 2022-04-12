@@ -73,5 +73,19 @@ print(f"     3.3:a legnagyobb térfogatú bolygó a {legnagyobb}")
 
 #4
 
+bekeres = input("     3.4: írd be a keresett bolygó nevét: ")
+bekeres = bekeres.lower()
+bekeres = bekeres.capitalize()
+kereso = [sor.nev for sor in lista if bekeres == sor.nev]
 
+if len(kereso) > 0:
+  print("          van ilyen nevű bolygó a naprendszer")
+else:
+  print("             sajnos nincs ilyen nevű bolygó a naprendszer")  
+
+bekeres2 = int(input("     3.5: Írj be egy egész számot: "))
+
+tobb_hold = [sor.nev for sor in lista if bekeres2 < sor.holdszam]
+
+print(f"     a következő bolygókank 10-nál/nél több holdja:\n     {tobb_hold}")
 
