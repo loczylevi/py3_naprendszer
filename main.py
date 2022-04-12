@@ -39,7 +39,7 @@ ___________________________________________________________________
 
 
 """
-#1
+#0
 # Merkúr;0;0.0562
 class Bolygok:
   def __init__(self,sor):
@@ -51,5 +51,8 @@ class Bolygok:
 with open("solsys.txt","r",encoding="UTF-8") as f:
   lista = [Bolygok(sor) for sor in f]
 
-#2
+#1
+  
+print("3. feladat:")
+print(f"     3.1: {len(lista)} bolygó van a naprendszerben")
 
